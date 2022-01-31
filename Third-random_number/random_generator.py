@@ -23,7 +23,7 @@ def processInput( min : str, max : str) -> tuple:
     if(is_int(min) and is_int(max)):
         min_number = int(min)
         max_number = int(max)
-        return min_number,max_number;
+        return min_number,max_number
     return EXIT_CODE,EXIT_CODE
 
 def numberPicker( number_range : tuple) -> None:
