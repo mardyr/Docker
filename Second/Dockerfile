@@ -18,4 +18,4 @@ EXPOSE 80
 
 #command will be run during starting a contatiner, not an image
 #container layer
-CMD [ "node" , "server.js" ]
+CMD [ "node" , "server_first.js" ]
