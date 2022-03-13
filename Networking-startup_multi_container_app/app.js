@@ -67,11 +67,10 @@ app.get('/people', async (req, res) => {
   }
 });
 
-/* here localhost need to be replaced 
-to host.docker.internal this will be translated 
-on IP address on local host machine*/
+/* monogodb is container name
+which exists inside the docker network*/
 mongoose.connect(
-  'mongodb://host.docker.internal:27017/swfavorites',
+  'mongodb://mongodb:27017/swfavorites',
   { useNewUrlParser: true },
   (err) => {
     if (err) {
